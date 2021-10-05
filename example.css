@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Poppins&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:wght@100&family=Source+Sans+Pro&display=swap');
+:root {}
+
+::before,
+ ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background: #f1f1f1;
+    z-index: auto;
+    margin-left: 25%;
+    margin-left: 300.25px;
+    margin-top: 0px;
+    width: 1146.75px;
+}
+
+a {
+    text-decoration: none;
+    color: seagreen;
+}
+
+.nav-menu-item a::after {
+    content: '';
+    background-color: brown;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin: 10px auto;
+}
+
+.nav-menu-item a:hover::after {
+    width: 100%;
+}
+
+.nav-menu-item a::before {
+    content: '';
+    background-color: brown;
+    width: 0;
+    height: 2px;
+    display: block;
+}
+
+.nav-menu-item a:hover::before {
+    width: 100%;
+}
+
+
+/*  <!-- Navigation verticale / Left Fixed Navbar --> */
+
+.nav-gauche {
+    width: 300px;
+    height: 100vh;
+    min-height: 800px;
+    background: #1C3738;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    border-right: 1px dashed #f1f1f1;
+    z-index: 5;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/************************ HOME SECTION **********************/
+
+.accueil {
+    background: url("https://eljazeir.com/wp-content/uploads/2018/01/top-free-background-images.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    height: 100vh;
+    min-height: 900px;
+    width: calc(100% - 0px);
+    margin-left: auto;
+    position: relative;
+}
+
+h1 {
+    font-size: 90px;
+    font-family: 'Abril Fatface', sans-serif;
+    margin: 0 60px;
+    padding-top: 210px;
+}
+
+.txt-animation {
+    font-size: 30px;
+    margin: 10px 0 10px 60px;
+}
+
+.btn-acc {
+    display: inline-flex;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    background: #000;
+    justify-content: center;
+    align-items: center;
+    color: #f1f1f1;
+    margin: 10px 0 0 0;
+    border-radius: 2px;
+    font-size: 18px;
+}
+
+.btn-acc1 {
+    margin: 10px 0 0 60px;
+}
+
+.btn-acc2 {
+    background: transparent;
+    border: 2px solid black;
+    color: black;
+    font-weight: 700;
+}
+
+.medias {
+    display: flex;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.media {
+    width: 60px;
+    height: 60px;
+    background: none;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.media2 {
+    background: transparent;
+    border: none;
+}
+
+.icone-medias {
+    width: 30px;
+}
+
+.btn-rond {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    bottom: 20px;
+    left: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 #333;
+    background: #333;
+    animation: pulse 1.3s infinite;
+}
+
+@keyframes pulse {
+    to {
+        box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.01);
+    }
+}
+
+.logo-btn-rond-acc {
+    width: 35px;
+}
+
+.presentation {
+    width: auto;
+    height: 690px;
+    position: absolute;
+    overflow: hidden;
+    border-top: 50px;
+    border-bottom: 50px;
+    color: black;
+    background-color: peachpuff;
+    background: fixed;
+}
+
+.fond-forme {
+    background: darkorange;
+    background-image: ;
+    width: 150px;
+    height: 200px;
+    position: fixed;
+    transform: rotate(-45deg) translateX(100px) translateY(-15px);
+    z-index: -1;
+}
+
+.titre-pres {
+    font: size 20px;
+    ;
+    text-align: center;
+    margin: 10px;
+    padding: left 10px;
+}
+
+.container-presentation {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25%;
+    flex-shrink: 0;
+    padding-left: 0;
+}
+
+.pres-gauche {
+    width: 600px;
+    flex-shrink: 0;
+    margin-bottom: 50px;
+    padding-left: 120px;
+    padding-top: 20px;
+}
+
+.pres-gauche h3 {
+    text-align: center;
+    font-size: 30px;
+    letter: spacing 1px;
+    ;
+}
+
+.pres-gauche hr {
+    width: 100px;
+    margin: 100px;
+}
+
+.pres-gauche p {
+    text-align: center;
+}
+
+.pres-droite {
+    width: 600px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.liste-presentation {
+    list-style-type: square;
+    padding: 10px;
+    ;
+}
+
+.chiffre-style {
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 15px;
+}
+
+.txt-liste {
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.item1 {
+    background: LightSkyBlue;
+}
+
+.item2 {
+    background: LightSalmon;
+}
+
+.item3 {
+    background: PaleTurquoise;
+}
+
+.item4 {
+    background: lightpink;
+}
+
+.container {}
+
+@media (min-width: 300px) {}
+
+@media (max-width:400px) {}
+
+.cercle-portrait {
+    height: 150px;
+    width: 150px;
+}
+
+.logo-cercle {
+    height: 45px;
+    width: 45px;
+}
+
+.boule-ico {
+    width: 20px;
+    height: 20px;
+}
+
+.cont-portfolio {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-gap: 10px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-template-columns: 200px 100px;
+    grid-template-rows: 100px 200px;
+}
+
+.titre-pres {
+    text-align: center;
+}
+
+.liste-presentation {
+    list-style: none;
+}
+
+#pres {
+    margin-left: 20%;
+}
+
+.bk {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    border: 3px solid #1C3738;
+    background-color: #1C3738;
+    right: 300px;
+}
+
+.bk-btn {
+    width: 50px;
+    height: 10px;
+    background: black;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px whitesmoke;
+    transition: all .5s ease-in-out;
+}
+
+.bk-btn::before,
+.bk-btn::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    background: black;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px whitesmoke;
+    transition: all .5s ease-in-out;
+}
+
+.bk-btn::before {
+    transform: translateY(-15px);
+}
+
+.bk-btn::after {
+    transform: translateY(15px);
+}
+
+@media screen {
+    max-width: 700px;
+}
