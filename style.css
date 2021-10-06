@@ -1,0 +1,492 @@
+                                                            ::before,
+                                                            ::after {
+                                                               box-sizing: border-box;
+                                                               margin: 0;
+                                                               padding: 0;
+                                                           }
+                                                           
+                                                           * {
+                                                               padding: 0px;
+                                                               margin: 0px;
+                                                               box-sizing: border-box;
+                                                               font-family: 'Julius Sans One', sans-serif;
+                                                           }
+                                                           
+                                                           nav {
+                                                               display: flex;
+                                                               justify-content: space-around;
+                                                               align-items: center;
+                                                               min-height: 8vh;
+                                                               background-color: #334756;
+                                                               font-family: 'Julius Sans One', sans-serif;
+                                                               position: relative;
+                                                           }
+                                                           
+                                                           .logo {
+                                                               color: #D54062;
+                                                               text-transform: uppercase;
+                                                               letter-spacing: 5px;
+                                                               font-size: 20px;
+                                                           }
+                                                           
+                                                           .navlinks {
+                                                               display: flex;
+                                                               width: 50%;
+                                                               justify-content: space-around;
+                                                           }
+                                                           
+                                                           .navlinks a {
+                                                               color: rgb(43, 196, 196);
+                                                               text-decoration: none;
+                                                               letter-spacing: 2px;
+                                                               font-weight: bold;
+                                                               font-size: 14px;
+                                                           }
+                                                           
+                                                           .navlinks li {
+                                                               list-style: none;
+                                                           }
+                                                           
+                                                           .burger {
+                                                               display: none;
+                                                           }
+                                                           
+                                                           .burger div {
+                                                               width: 25px;
+                                                               height: 5px;
+                                                               margin: 5px;
+                                                               background-color: dodgerblue;
+                                                               transition: all 0.3s ease;
+                                                           }
+                                                           
+                                                           @media screen and (max-width:760px) {
+                                                               body {
+                                                                   overflow: hidden;
+                                                               }
+                                                               .navlinks {
+                                                                   position: absolute;
+                                                                   height: 92vh;
+                                                                   right: 0px;
+                                                                   top: 8vh;
+                                                                   background-color: #334756;
+                                                                   display: flex;
+                                                                   flex-direction: column;
+                                                                   align-items: center;
+                                                                   width: 50%;
+                                                                   transform: translateX(100%);
+                                                                   transition: transform 0.5 ease-in;
+                                                               }
+                                                               .navlinks li {
+                                                                   opacity: 0;
+                                                               }
+                                                               .burger {
+                                                                   display: block;
+                                                                   cursor: pointer;
+                                                               }
+                                                           }
+                                                           
+                                                           .nav-active {
+                                                               transform: translateX(0%);
+                                                           }
+                                                           
+                                                           @keyframes navLinkFade {
+                                                               from {
+                                                                   opacity: 0;
+                                                                   transform: translateX(50px);
+                                                               }
+                                                               to {
+                                                                   opacity: 1;
+                                                                   transform: translateX(0px);
+                                                               }
+                                                           }
+                                                           
+                                                           .toggle .line1 {
+                                                               transform: rotate(-45deg) translate(-5px, 6px);
+                                                           }
+                                                           
+                                                           .toggle .line2 {
+                                                               opacity: 0;
+                                                           }
+                                                           
+                                                           .toggle .line3 {
+                                                               transform: rotate(-45deg) translate(-5px, 6px);
+                                                           }
+                                                           
+                                                           .inicio {
+                                                               background: url("http://codetrotter.co.uk/wp-content/uploads/2019/10/gradient.png");
+                                                               background-repeat: no-repeat;
+                                                               background-size: cover;
+                                                               height: 700px;
+                                                               width: auto;
+                                                               position: relative;
+                                                               justify-content: center;
+                                                               align-items: center;
+                                                           }
+                                                           
+                                                           .btn-acc {
+                                                               display: inline-flex;
+                                                               width: 200px;
+                                                               height: 50px;
+                                                               text-decoration: none;
+                                                               background: #000;
+                                                               justify-content: center;
+                                                               align-items: center;
+                                                               color: #f1f1f1;
+                                                               margin: 10px 0 0 0;
+                                                               border-radius: 2px;
+                                                               font-size: 18px;
+                                                           }
+                                                           
+                                                           .btn-acc1 {
+                                                               margin: 10px 0 0 60px;
+                                                               background: transparent;
+                                                               border: 2px solid black;
+                                                               color: black;
+                                                           }
+                                                           
+                                                           .btn-acc2 {
+                                                               background: transparent;
+                                                               border: 2px solid black;
+                                                               color: black;
+                                                               font-weight: 700;
+                                                           }
+                                                           
+                                                           .txt-animation {
+                                                               font-size: 30px;
+                                                               margin: 10px 0 10px 60px;
+                                                           }
+                                                           
+                                                           h1 {
+                                                               font-size: 90px;
+                                                               font-family: 'Julius Sans One', sans-serif;
+                                                               margin: 0 60px;
+                                                               padding-top: 210px;
+                                                           }
+                                                           
+                                                           .medias {
+                                                               display: flex;
+                                                               margin-left: 60px;
+                                                               margin-top: 30px;
+                                                           }
+                                                           
+                                                           .media {
+                                                               width: 60px;
+                                                               height: 60px;
+                                                               background: none;
+                                                               border-radius: 50%;
+                                                               margin-right: 10px;
+                                                               display: flex;
+                                                               justify-content: center;
+                                                               align-items: center;
+                                                               cursor: pointer;
+                                                           }
+                                                           
+                                                           .media2 {
+                                                               background: transparent;
+                                                               border: none;
+                                                           }
+                                                           
+                                                           .icone-medias {
+                                                               width: 30px;
+                                                           }
+                                                           
+                                                           .logo-btn-rond-acc {
+                                                               width: 35px;
+                                                               color: black;
+                                                           }
+                                                           
+                                                           .btn-rond {
+                                                               width: 70px;
+                                                               height: 70px;
+                                                               position: absolute;
+                                                               bottom: 20px;
+                                                               left: 60px;
+                                                               border-radius: 50%;
+                                                               display: flex;
+                                                               justify-content: center;
+                                                               align-items: center;
+                                                               cursor: pointer;
+                                                               box-shadow: 0 0 0 0 #333;
+                                                               background: none;
+                                                               animation: pulse 1.3s infinite;
+                                                           }
+                                                           
+                                                           @keyframes pulse {
+                                                               to {
+                                                                   box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.01);
+                                                               }
+                                                           }
+                                                           
+                                                           .presentation {
+                                                               width: 100%;
+                                                               height: 678px;
+                                                               display: flex;
+                                                               flex-direction: column;
+                                                               background-color: gainsboro;
+                                                           }
+                                                           
+                                                           .titre-pres {
+                                                               width: 100%;
+                                                               height: 30%;
+                                                               display: flex;
+                                                               justify-content: center;
+                                                               padding-top: 5%;
+                                                               text-decoration: underline black;
+                                                           }
+                                                           
+                                                           .pres-gauche {
+                                                               height: 350px;
+                                                               width: 700px;
+                                                               display: flex;
+                                                               flex-direction: column;
+                                                               justify-content: space-around;
+                                                               margin-right: 0%;
+                                                               padding-left: 250px;
+                                                               text-align: justify;
+                                                           }
+                                                           
+                                                           .pres-droite {
+                                                               display: flex;
+                                                               flex-direction: column;
+                                                               height: 0px;
+                                                               width: 1200px;
+                                                               justify-content: flex-end;
+                                                               align-items: flex-end;
+                                                           }
+                                                           
+                                                           .liste-presentation {
+                                                               list-style: none;
+                                                           }
+                                                           
+                                                           .fond-form {
+                                                               background-image: linear-gradient(to right, #66FCF1, #45A29E);
+                                                               width: 2300px;
+                                                               height: 1000px;
+                                                               position: absolute;
+                                                               transform: rotate(-45deg) translateX(100px) translateY(-15px);
+                                                               z-index: -1;
+                                                           }
+                                                           
+                                                           .txt-liste {
+                                                               width: 300px;
+                                                               height: 50px;
+                                                               display: flex;
+                                                               flex-direction: column;
+                                                               padding-bottom: 50px;
+                                                           }
+                                                           
+                                                           .portfolio {
+                                                               width: 100%;
+                                                               height: 2300px;
+                                                               padding-left: 10%;
+                                                               background-color: rgb(255, 67, 89)
+                                                           }
+                                                           
+                                                           .titre-port {
+                                                               display: flex;
+                                                               flex-direction: row;
+                                                               width: 100%;
+                                                               height: 7%;
+                                                               justify-content: center;
+                                                               padding-top: 3%;
+                                                               padding-right: 150px;
+                                                           }
+                                                           
+                                                           .cont-portfolio {
+                                                               justify-content: space-between;
+                                                               width: 100%;
+                                                               height: 1600px;
+                                                               display: grid;
+                                                               grid-template-rows: repeat(4, 100px);
+                                                               grid-template-columns: repeat(2, 1fr);
+                                                               grid-row-gap: 300px;
+                                                               grid-column-gap: 200px;
+                                                           }
+                                                           
+                                                           .itemvague1 h3 p {
+                                                               position: relative;
+                                                           }
+                                                           
+                                                           .itemvague2 h3 p {
+                                                               position: relative;
+                                                           }
+                                                           
+                                                           .itemvague3 h1 p {
+                                                               position: relative;
+                                                           }
+                                                           
+                                                           .itemvague1 {
+                                                               display: flex;
+                                                               flex-direction: column;
+                                                               width: 500px;
+                                                               height: 500px;
+                                                           }
+                                                           
+                                                           .itemvague1 img {
+                                                               display: flex;
+                                                               width: 100%;
+                                                               height: 250px;
+                                                           }
+                                                           
+                                                           .itemvague2 {
+                                                               display: flex;
+                                                               flex-direction: column;
+                                                               width: 500px;
+                                                               height: 500px;
+                                                           }
+                                                           
+                                                           .itemvague2 img {
+                                                               display: flex;
+                                                               width: 100%;
+                                                               height: 250px;
+                                                           }
+                                                           
+                                                           .itemvague3 {
+                                                               display: flex;
+                                                               flex-direction: column;
+                                                               width: 500px;
+                                                               height: 500px;
+                                                           }
+                                                           
+                                                           .itemvague3 img {
+                                                               display: flex;
+                                                               width: 100%;
+                                                               height: 250px;
+                                                           }
+                                                           
+                                                           .section-range {
+                                                               width: 100%;
+                                                               height: 750px;
+                                                               margin-right: 10%;
+                                                               background-color: gainsboro;
+                                                               padding-left: 50px;
+                                                           }
+                                                           
+                                                           .titre-exp {
+                                                               display: flex;
+                                                               flex-direction: row;
+                                                               justify-content: center;
+                                                               padding-top: 70px;
+                                                           }
+                                                           
+                                                           .grille-skill {
+                                                               width: 100%;
+                                                               height: 450px;
+                                                               background-color: 6FCF1;
+                                                               margin-top: 10%;
+                                                               display: grid;
+                                                               justify-content: space-around;
+                                                               grid-template-rows: repeat(3, 100px);
+                                                               grid-template-columns: repeat(3, 1fr);
+                                                               grid-row-gap: 150px;
+                                                               grid-column-gap: 100px;
+                                                           }
+                                                           
+                                                           .barre-skillb1 {
+                                                               width: 90%;
+                                                               background-color: green;
+                                                               text-align: center;
+                                                           }
+                                                           
+                                                           .barre-skillb2 {
+                                                               width: 75%;
+                                                               background-color: green;
+                                                               text-align: center;
+                                                           }
+                                                           
+                                                           .barre-skillb3 {
+                                                               width: 70%;
+                                                               background-color: green;
+                                                               text-align: center;
+                                                           }
+                                                           
+                                                           .barre-skillb4 {
+                                                               width: 80%;
+                                                               background-color: green;
+                                                               text-align: center;
+                                                           }
+                                                           
+                                                           .barre-skillb5 {
+                                                               width: 70%;
+                                                               background-color: green;
+                                                               text-align: center;
+                                                           }
+                                                           
+                                                           .barre-skillb6 {
+                                                               width: 80%;
+                                                               background-color: green;
+                                                               text-align: center;
+                                                           }
+                                                           
+                                                           .label-skill {
+                                                               padding-bottom: 15px;
+                                                           }
+                                                           
+                                                           .boule-ico {
+                                                               width: 30px;
+                                                               height: 30px;
+                                                           }
+                                                           
+                                                           .travail-exp {
+                                                               width: 100%;
+                                                               height: 800px;
+                                                               background-color: #45A29E;
+                                                               padding-left: 100px;
+                                                           }
+                                                           
+                                                           .titre-travail-exp {
+                                                               display: flex;
+                                                               flex-direction: row;
+                                                               justify-content: center;
+                                                               padding-top: 90px;
+                                                           }
+                                                           
+                                                           .cont-exp-travail {
+                                                               display: flex;
+                                                               flex-direction: column;
+                                                               justify-content: space-around;
+                                                           }
+                                                           
+                                                           .flex-cont-bloc-exp {
+                                                               display: grid;
+                                                               grid-template-rows: repeat(2, 100px);
+                                                               grid-template-columns: repeat(2, 1fr);
+                                                               grid-row-gap: 150px;
+                                                               grid-column-gap: 100px;
+                                                               position: absolute;
+                                                               padding-top: 230px;
+                                                           }
+                                                           
+                                                           .barre-verticale {
+                                                               display: grid;
+                                                               grid-template-rows: repeat(2, 100px);
+                                                               grid-template-columns: repeat(2, 1fr);
+                                                               grid-row-gap: 150px;
+                                                               grid-column-gap: 100px;
+                                                               padding-top: 150px;
+                                                           }
+                                                           
+                                                           .section-contact {
+                                                               width: 100%;
+                                                               height: 500px;
+                                                               display: flex;
+                                                               flex-direction: column;
+                                                               justify-content: space-around;
+                                                               align-items: center;
+                                                               background-color: rgb(255, 67, 89)
+                                                           }
+                                                           
+                                                           .container-form {
+                                                               width: 60%;
+                                                               height: 250px;
+                                                               justify-content: space-between;
+                                                               background-color: #45A29E;
+                                                               margin-bottom: 80px;
+                                                           }
+                                                           
+                                                           .form-bloc {
+                                                               display: flex;
+                                                               flex-direction: column;
+                                                               align-items: center;
+                                                               padding-top: 85px;
+                                                           }
